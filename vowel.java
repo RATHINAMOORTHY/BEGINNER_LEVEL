@@ -7,5 +7,8 @@ class vowel
     String c=in.nextLine();
     if(c.equalsIgnoreCase("a")||c.equalsIgnoreCase("e")||c.equalsIgnoreCase("i")||c.equalsIgnoreCase("o")||c.equalsIgnoreCase("u"))
     System.out.println("VOWEL");
+    else
+     System.out.println("NOT VOWEL");
+      
   }
 }
