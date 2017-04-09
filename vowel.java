@@ -5,6 +5,7 @@ class vowel
     System.out.println("ENTER A CHARACTER");
     Scanner in=new Scanner(System.in);
     String c=in.nextLine();
-    System.out.println(c);
+    if(c.equalsIgnoreCase("a"))
+    System.out.println("VOWEL");
   }
 }
