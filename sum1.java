@@ -1,8 +1,11 @@
-class sum
+import java.util.*;
+class sum1
 {
   public static void main(String args[])
   {
-    int n=Integer.valueOf(args[0]);
+	  System.out.print("ENTER THE LIMIT");
+	  Scanner in=new Scanner(System.in);
+            int n=in.nextInt();
 	int sum=0;
 	for(int i=0;i<n;i++)
 		sum=sum+i;
