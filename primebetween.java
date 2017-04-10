@@ -1,21 +1,26 @@
 class primebetween
-{
-  public static void main(String args[])
+{ public static void main(String args[])
   {
     int a=Integer.valueOf(args[0]);
     int b=Integer.valueOf(args[1]);
     for(int i=a;i<=b;i++)
     {
-      int n=i;
-      int m=n/2;
-      for(int j=2;j<=m;j++)
-      {
-        if(n%j!=0)
-        {
-          System..out.println(+j);
-        }
-      }
-    }
+      func(i);
+	}
   }
+ public static void func(int n)
+  {
+	  int flag=0;
+	  int m=n/2;
+	  for(int i=2;i<=m;i++)
+	  {
+		  if(n%i==0)
+		  {   flag=1;
+			  break;
+		  }
+	  }
+	  if(flag==0)
+		  System.out.println(+n);
+  }
+		  
 }
-          
