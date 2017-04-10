@@ -6,8 +6,9 @@ class palindrome
     StringBuffer sb=new StringBuffer(args[0]);
     sb.reverse();
     String s=new String(sb);
+	
     
-    if(s.toUpperCase()==args[0].toUpperCase())
+    if(s.equalsIgnoreCase(args[0]))
       System.out.print("PALINDROME");
     else
       System.out.print("NOT PALINDROME");
