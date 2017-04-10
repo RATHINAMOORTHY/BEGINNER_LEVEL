@@ -1,24 +1,20 @@
-class prime
+class palindrome
 {
-  public static void main(String args[])
-  {
-    int flag=0;
-    int a=Integer.valueOf(args[0]);
-    int b=a/2;
-    for(int i=0;i<b;i++)
-    {
-      if(a%i==0)
-      {
-        flag=1;
-        System.out.print("NOT PRIME");
-        break;
-      }
-    }
-    if(flag==0)
-    {
-       System.out.print("PRIME");
-    }
-  }
-}
-      
-      
+   public static void main(String args[])
+{  
+  int i,m=0,flag=0;    
+  int n=Integer.valueOf(args[0]); 
+  m=n/2;    
+  for(i=2;i<=m;i++)
+{    
+   if(n%i==0)
+  {    
+   System.out.println("Number is not prime");    
+   flag=1;    
+   break;    
+   }    
+ }    
+  if(flag==0)    
+  System.out.println("Number is prime");    
+}  
+}  
