@@ -5,7 +5,7 @@ class asci
     char[] c=args[0].toCharArray();
     for(int i=0;i<args[0].length;i++)
     {
-      System.out.print(+(int)c[i]);
+      System.out.println(+(int)c[i]);
     }
   }
 }
