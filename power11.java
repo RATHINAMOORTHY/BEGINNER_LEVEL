@@ -5,4 +5,6 @@ class power11
   {
     int a=Integer.valueOf(args[0]);
     int b=Integer.valueOf(args[1]);
-    System.out.print(+Math.pow
+    System.out.print(Math.pow(a,b));
+  }
+}
